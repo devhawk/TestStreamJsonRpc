@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStreamJsonRpc", "TestStreamJsonRpc\TestStreamJsonRpc.csproj", "{DB73C7D8-1850-4BEC-ADA3-E06A925F2A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJsonRpcClient", "TestJsonRpcClient\TestJsonRpcClient.csproj", "{90D8B4E9-534D-4D0E-8E84-4E8219ECEF30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB73C7D8-1850-4BEC-ADA3-E06A925F2A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB73C7D8-1850-4BEC-ADA3-E06A925F2A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB73C7D8-1850-4BEC-ADA3-E06A925F2A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB73C7D8-1850-4BEC-ADA3-E06A925F2A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D8B4E9-534D-4D0E-8E84-4E8219ECEF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D8B4E9-534D-4D0E-8E84-4E8219ECEF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D8B4E9-534D-4D0E-8E84-4E8219ECEF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D8B4E9-534D-4D0E-8E84-4E8219ECEF30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {091CEC5E-D027-495D-AB79-09B902E98441}
+	EndGlobalSection
+EndGlobal

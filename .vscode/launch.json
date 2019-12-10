@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Server TestStreamJsonRpc",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/TestStreamJsonRpc/bin/Debug/netcoreapp3.1/TestStreamJsonRpc.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "requireExactSource": false
+        },
+        {
+            "name": "Client TestJsonRpcClient",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/TestJsonRpcClient/bin/Debug/netcoreapp3.1/TestJsonRpcClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/TestJsonRpcClient",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+
+    ]
+}
