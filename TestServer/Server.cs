@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace TestStreamJsonRpc
+namespace TestServer
 {
     class Server
     {
