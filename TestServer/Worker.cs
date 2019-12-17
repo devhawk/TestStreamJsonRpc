@@ -41,10 +41,19 @@ namespace TestServer
             {
                 while (!token.IsCancellationRequested)
                 {
-                    var client = await Task.Run(() => listener.AcceptTcpClientAsync(), token).ConfigureAwait(false);
+                    var client = await listener.AcceptTcpClientAsync().ConfigureAwait(false);
                     var instance = ActivatorUtilities.CreateInstance<Server>(serviceProvider);
                     var _ = Task.Run(() => RunClient(client, instance, token));
                 }
+            }
+            catch (ObjectDisposedException) when (token.IsCancellationRequested)
+            {
+                logger.LogInformation("Listener {0} Shut Down (disposed)", listener.LocalEndpoint);
+
+            }
+            catch (OperationCanceledException) when (token.IsCancellationRequested)
+            {
+                logger.LogInformation("Listener {0} Shut Down (canceled)", listener.LocalEndpoint);
             }
             finally
             {
